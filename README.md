@@ -6,3 +6,5 @@ My solution goes through a directory of files with the format "(name)-YYYYMMDD-X
 To generalize this someone would have to change the directory, the incorrect date to test the file against (or remove the if statement altogether), method of extracting the date from file name with parameter expansion or anything else, and the Shebang at the top for bash location
 
 The Shebang at the top is specific to Android (which is what I used this for). I think this should just work on Linux and MacOS but to run on Windows I used the Git Bash command line software.
+
+If anyone wants to use this for images taken with a camera, the files *might* also have a wrong date in their EXIF metadata (maybe, maybe not), in which case I suggest using [one of these solutions](https://photo.stackexchange.com/questions/2973/is-there-any-software-which-will-set-the-exif-dates-based-on-the-files-modifica/7960#7960) which use either exiftool or jhead
